@@ -19,7 +19,7 @@ jobs:
         run: python main.py
         env:
           LLM_PRIMARY_API_KEY: ${{ secrets.LLM_PRIMARY_API_KEY }}
-          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHUBOT }}
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
       - name: 上传报告
         uses: actions/upload-artifact@v4
         with:
