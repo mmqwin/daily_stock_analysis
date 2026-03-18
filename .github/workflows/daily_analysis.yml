@@ -14,9 +14,11 @@ on:
         default: 'full'
         type: choice
         options:
-          - full          # 完整分析（股票+大盘）
-          - market-only   # 仅大盘复盘
           - stocks-only   # 仅股票分析
+          - market-only   # 仅大盘复盘
+          - full          # 完整分析（股票+大盘）
+          
+          
       force_run:
         description: '强制运行（跳过交易日检查）'
         required: false
